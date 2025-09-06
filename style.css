@@ -1,0 +1,41 @@
+/*Estilos generales para TODAS las filas */
+.Fila1, .Fila2, .Fila3 {
+    display: flex;        /* Organiza los hijos en fila */
+    gap: 10px;            /* Separación entre las cajas */
+    margin: 10px;         /* Margen externo entre filas */
+}
+
+/*Estilo base para TODAS las cajas */
+.Fila1 > div, .Fila2 > div, .Fila3 > div {
+    background: lightcoral;  
+    border-radius: 10px;       
+    display: flex;             
+    align-items: center;       
+    justify-content: center;  
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    padding: 20px;             /* Espacio interno */
+}
+
+/*Fila1: A grande + B angosto*/
+.BoxA {
+    flex: 3;   /* Ocupa 3 partes del espacio */
+    height: 100px;
+}
+.BoxB {
+    flex: 1;   /* Ocupa 1 parte del espacio */
+    height: 100px;
+}
+
+/* Fila2: C, D, E iguales*/
+.BoxC, .BoxD, .BoxE {
+    flex: 1;   /* Todas iguales */
+    height: 100px;
+}
+
+/* Fila3: F ocupa todo el ancho*/
+.BoxF {
+    flex: 1;   /* Ocupa todo el espacio disponible */
+    height: 120px;
+}
